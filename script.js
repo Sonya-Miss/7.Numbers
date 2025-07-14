@@ -1,55 +1,67 @@
 // --- НАЛАШТУВАННЯ ДЛЯ ГРИ 1: Перетягни слово до картинки ---
 const dragAndDropPuzzlesData = [
-    { correctWord: "Hello", image: "./Pictures/Привіт.jpg", draggableWord: "Hello" },
-    { correctWord: "Hi", image: "./Pictures/Привіт.jpg", draggableWord: "Hi" },
-    { correctWord: "Good morning", image: "./Pictures/Добрий ранок.jpg", draggableWord: "Good morning" },
-    { correctWord: "Good afternoon", image: "./Pictures/Добрий день.jpg", draggableWord: "Good afternoon" },
-    { correctWord: "Good evening", image: "./Pictures/Добрий вечір.jpg", draggableWord: "Good evening" },
-    { correctWord: "Good night", image: "./Pictures/Добраніч.jpg", draggableWord: "Good night" }
+    { correctWord: "What is your name", image: "./Pictures/Як тебе звати.jpg", draggableWord: "What is your name" },
+    { correctWord: "Nice to meet you", image: "./Pictures/Приємно познайомитись.jpg", draggableWord: "Nice to meet you" },
+    { correctWord: "Bye", image: "./Pictures/Пока.jpg", draggableWord: "Bye" },
+    { correctWord: "I am", image: "./Pictures/Я.jpg", draggableWord: "I am" },
+    { correctWord: "Goodbye", image: "./Pictures/До побачення.jpg", draggableWord: "Goodbye" },
+    { correctWord: "My name is", image: "./Pictures/Мене звати.jpg", draggableWord: "My name is" }
 ];
 
 // --- НАЛАШТУВАННЯ ДЛЯ ГРИ 2: Склади слово з літер ---
 const letterPuzzlesData = [
-    { phrase: "How are you", image: "./Pictures/як твої справи.jpg" },
-    { phrase: "I'm good", image: "./Pictures/добре.jpg" },
-    { phrase: "I'm happy", image: "./Pictures/щасливий.jpg" },
-    { phrase: "I'm great", image: "./Pictures/чудово.jpg" },
-    { phrase: "I'm sad", image: "./Pictures/сумний.jpg" },
-    { phrase: "I'm tired", image: "./Pictures/втомлений.jpg" },
-    { phrase: "I'm hungry", image: "./Pictures/голодний.jpg" }
+
+    { phrase: "eight", image: "./Pictures/8.jpg" },
+    { phrase: "nine", image: "./Pictures/9.jpg" },
+    { phrase: "four", image: "./Pictures/4.jpg" },
+    { phrase: "five", image: "./Pictures/5.jpg" },
+    { phrase: "six", image: "./Pictures/6.jpg" },
+    { phrase: "three", image: "./Pictures/3.jpg" },
+    { phrase: "zero", image: "./Pictures/0.jpg" },
+    { phrase: "one", image: "./Pictures/1.jpg" },
+    { phrase: "two", image: "./Pictures/2.jpg" },
+    { phrase: "seven", image: "./Pictures/7.jpg" },
+    { phrase: "ten", image: "./Pictures/10.jpg" }
 ];
-
-
 // Зображення для каруселі
 const carouselImages = [
-    { src: "./Pictures/Hello.jpg", alt: "Привітання Hello" },
-    { src: "./Pictures/Hi.jpg", alt: "Привітання Hi" },
-    { src: "./Pictures/Good morning.jpg", alt: "Привітання Good Morning" },
-    { src: "./Pictures/Good afternoon.jpg", alt: "Привітання Good Afternoon" },
-    { src: "./Pictures/Good evening.jpg", alt: "Привітання Good Evening" },
-    { src: "./Pictures/Good night.jpg", alt: "Привітання Good night" }
+    { src: "./Pictures/Nice to meet you.jpg", alt: "Nice to meet you" },
+    { src: "./Pictures/What is your name.jpg", alt: "What is your name" },
+    { src: "./Pictures/I am.jpg", alt: "I am" },
+    { src: "./Pictures/My name is.jpg", alt: "My name is" },
+    { src: "./Pictures/Bye.jpg", alt: "Bye" },
+    { src: "./Pictures/Goodbye.jpg", alt: "Goodbye" }
 ];
 
-// Зображення для каруселі
+// Зображення для каруселі  2
 const carouselImages2 = [
-    { src: "./Pictures/How are you.jpg", alt: "How are you" },
-    { src: "./Pictures/good.jpg", alt: "good" },
-    { src: "./Pictures/happy.jpg", alt: "happy" },
-    { src: "./Pictures/great.jpg", alt: "great" },
-    { src: "./Pictures/sad.jpg", alt: "sad" },
-    { src: "./Pictures/tired.jpg", alt: "tired" },
-    { src: "./Pictures/hungry.jpg", alt: "hungry" }
+
+    { src: "./Pictures/zero.jpg", alt: "Zero" },
+    { src: "./Pictures/one.jpg", alt: "One" },
+    { src: "./Pictures/two.jpg", alt: "Two" },
+    { src: "./Pictures/three.jpg", alt: "Three" },
+    { src: "./Pictures/four.jpg", alt: "Four" },
+    { src: "./Pictures/five.jpg", alt: "Five" },
+    { src: "./Pictures/six.jpg", alt: "Six" },
+    { src: "./Pictures/seven.jpg", alt: "Seven" },
+    { src: "./Pictures/eight.jpg", alt: "Eight" },
+    { src: "./Pictures/nine.jpg", alt: "Nine" },
+    { src: "./Pictures/ten.jpg", alt: "Ten" }
 ];
 
 // --- НАЛАШТУВАННЯ ДЛЯ ГРИ 3: ВПІЗНАЙ СЛОВО НА СЛУХ (АУДІО-ГРА) ---
 const audioPuzzlesData = [
-    { word: "I'm great", audio: "./Audio/great.mp3" },
-    { word: "I'm sad", audio: "./Audio/sad.mp3" },
-    { word: "I'm happpy", audio: "./Audio/happy.mp3" },
-    { word: "I'm hungry", audio: "./Audio/hungry.mp3" },
-    { word: "I'm tired", audio: "./Audio/tired.mp3" },
-    { word: "How are you", audio: "./Audio/how are you.mp3" },
-    { word: "I'm good", audio: "./Audio/good.mp3" },
+    { word: "seven", audio: "./Audio/seven.mp3" },
+    { word: "eight", audio: "./Audio/eight.mp3" },
+    { word: "one", audio: "./Audio/one.mp3" },
+    { word: "zero", audio: "./Audio/zero.mp3" },
+    { word: "six", audio: "./Audio/six.mp3" },
+    { word: "two", audio: "./Audio/two.mp3" },
+    { word: "four", audio: "./Audio/four.mp3" },
+    { word: "five", audio: "./Audio/five.mp3" },
+    { word: "nine", audio: "./Audio/nine.mp3" },
+    { word: "three", audio: "./Audio/three.mp3" },
+    { word: "ten", audio: "./Audio/ten.mp3" }
 ];
 
 
@@ -114,7 +126,7 @@ function createDragAndDropPuzzle(puzzleData, index) {
     puzzleWrapper.id = puzzleId;
     puzzleWrapper.className = "bg-white p-3 rounded-lg shadow-md flex flex-col items-center relative flex-grow-0 flex-shrink-0 w-[calc(33.33%-1.066rem)] min-w-[180px]";
     puzzleWrapper.innerHTML = `
-        <img src="${imagePath}" alt="Зображення для слова ${correctWord}" class="w-28 h-28 object-cover rounded-md shadow-sm mb-3"> 
+        <img src="${imagePath}" alt="Зображення для слова ${correctWord}" class="imagesize w-28 h-28 rounded-md shadow-sm mb-3"> 
         
         <div class="word-drop-zone w-full h-16 flex justify-center items-center border-2 border-dashed border-gray-300 rounded-md text-lg font-bold text-gray-500 overflow-hidden">
             <span class="placeholder text-sm">Перетягніть слово сюди</span>
@@ -279,11 +291,6 @@ function checkWordDropResult(correctWord, wordDropZone, messageEl, checkBtn) {
     }
 }
 
-/////////////////////////////////////////////////// --- ПЕРЕТЯГНИ СЛОВО ДО КАРТИНКИ 1.2 --- //////////////////////////////////////////
-
-
-
-
 
 //////////////////////////////////////////////////////// --- ФУНКЦІЇ ДЛЯ ГРИ 2: Склади слово з літер ---//////////////////////////////////////
 
@@ -297,7 +304,7 @@ function createLetterPuzzle(phrase, imagePath, index) {
     puzzleWrapper.className = "bg-white p-6 md:p-8 rounded-2xl shadow-lg flex flex-col items-center";
 
     puzzleWrapper.innerHTML = `
-        <img src="${imagePath}" alt="Зображення для слова ${phrase}" class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg mb-6 shadow-md">
+        <img src="${imagePath}" alt="Зображення для слова ${phrase}" class="imagesize w-28 h-28 md:w-40 md:h-40 rounded-lg mb-6 shadow-md">
         
         <div id="word-container-letters-${index}" class="flex justify-center items-center flex-wrap gap-2 mb-6 min-h-[60px]"></div>
         <div class="w-full h-px bg-slate-200 my-6"></div>
@@ -503,7 +510,7 @@ function addAudioDropZoneListeners(dropZone) {
             if (existingWordInDropZone) {
                 document.getElementById('word-bank').appendChild(existingWordInDropZone);
                 existingWordInDropZone.classList.remove('audio-dropped-word', 'correct-word-box', 'incorrect-word-box');
-                existingWordInDropZone.classList.add('bg-blue-300', 'hover:bg-blue-400', 'text-white');
+                existingWordInDropZone.classList.add('bg-blue-500', 'hover:bg-blue-400', 'text-white');
                 existingWordInDropZone.draggable = true;
                 addAudioDraggableWordListeners(); // Повторно додаємо слухачів
             }
@@ -523,7 +530,7 @@ function addAudioDropZoneListeners(dropZone) {
                 // Видаляємо класи результату з елемента, якщо вони були
                 if (draggedWordElement.classList.contains('correct-word-box') || draggedWordElement.classList.contains('incorrect-word-box')) {
                     draggedWordElement.classList.remove('correct-word-box', 'incorrect-word-box');
-                    draggedWordElement.classList.add('bg-blue-300', 'hover:bg-blue-400', 'text-white');
+                    draggedWordElement.classList.add('bg-blue-400', 'hover:bg-blue-600', 'text-white');
                 }
                 
                 // Якщо кнопка перевірки була вимкнена, увімкнути її, якщо слово замінено
@@ -573,7 +580,7 @@ function checkAudioGameResult(correctWord, dropZone, messageEl, checkBtn, playBt
         dropZone.classList.remove('incorrect');
         checkBtn.disabled = true; 
         playBtn.disabled = true; 
-        droppedWordElement.classList.remove('bg-blue-300', 'hover:bg-blue-400', 'text-white', 'incorrect-word-box'); 
+        droppedWordElement.classList.remove('bg-blue-400', 'hover:bg-blue-600', 'text-white', 'incorrect-word-box'); 
         droppedWordElement.classList.add('correct-word-box'); 
         droppedWordElement.draggable = false; 
         droppedWordElement.style.cursor = 'default'; // Змінюємо курсор
@@ -590,14 +597,14 @@ function checkAudioGameResult(correctWord, dropZone, messageEl, checkBtn, playBt
         messageEl.className = "mt-1 h-4 text-center text-xs font-medium text-red-500";
         dropZone.classList.add('incorrect');
         dropZone.classList.remove('correct');
-        droppedWordElement.classList.remove('bg-blue-300', 'hover:bg-blue-400', 'text-white', 'correct-word-box');
+        droppedWordElement.classList.remove('bg-blue-400', 'hover:bg-blue-600', 'text-white', 'correct-word-box');
         droppedWordElement.classList.add('incorrect-word-box'); 
         
         setTimeout(() => {
             dropZone.innerHTML = `<span class="placeholder text-sm font-normal text-gray-400">Перетягніть слово сюди</span>`;
             dropZone.classList.remove('incorrect');
             droppedWordElement.classList.remove('incorrect-word-box', 'opacity-50', 'audio-dropped-word'); 
-            droppedWordElement.classList.add('bg-blue-300', 'hover:bg-blue-400', 'text-white'); 
+            droppedWordElement.classList.add('bg-blue-400', 'hover:bg-blue-600', 'text-white'); 
             audioWordBank.appendChild(droppedWordElement); 
             droppedWordElement.draggable = true; 
             droppedWordElement.style.cursor = 'grab'; // Повернути курсор
@@ -620,7 +627,7 @@ function createAudioPuzzleBlock(puzzleData, index) {
         <button id="play-btn-audio-${index}" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
         </button>
-        <div class="audio-drop-zone w-full h-16 flex justify-center items-center border-2 border-dashed border-gray-300 rounded-md text-base font-bold text-gray-500 overflow-hidden">
+        <div class="audio-drop-zone w-full h-14 flex justify-center items-center border-2 border-dashed border-gray-300 rounded-md text-base font-bold text-gray-500 overflow-hidden">
             <span class="placeholder text-sm font-normal text-gray-400">Перетягніть слово сюди</span>
         </div>
         <div class="mt-2 w-full">
@@ -655,7 +662,7 @@ function createAudioGameWordBank() {
     shuffleArray([...audioPuzzlesData]).forEach(({ word }) => {
         const wordEl = document.createElement("div");
         wordEl.textContent = word;
-        wordEl.className = "audio-draggable-word bg-blue-300 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg cursor-grab active:cursor-grabbing transition-transform duration-100 ease-out";
+        wordEl.className = "audio-draggable-word bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded-lg cursor-grab active:cursor-grabbing transition-transform duration-100 ease-out";
         wordEl.setAttribute("draggable", true);
         wordEl.dataset.word = word; 
         audioWordBank.appendChild(wordEl);
@@ -778,22 +785,22 @@ function showSlide2(index) {
 
 
 function nextSlide2() {
-    showSlide2(currentSlide2 + 1); // ✅ ПРАВИЛЬНО
+    showSlide2(currentSlide2 + 1);
 }
 
 function prevSlide2() {
-    showSlide2(currentSlide2 - 1); // ✅ ПРАВИЛЬНО
+    showSlide2(currentSlide2 - 1);
 }
 
 function startCarouselAutoPlay2() {
-    stopCarouselAutoPlay2(); // ✅ правильна назва
+    stopCarouselAutoPlay2();
     carouselInterval2 = setInterval(() => {
         nextSlide2();
     }, 4000);
 }
 
 function stopCarouselAutoPlay2() {
-    clearInterval(carouselInterval2); // ✅ правильна змінна
+    clearInterval(carouselInterval2);
 }
 
 
@@ -826,9 +833,4 @@ document.addEventListener('DOMContentLoaded', () => {
             initializeCarousel2();
     carouselPrevBtn2.addEventListener('click', prevSlide2); 
     carouselNextBtn2.addEventListener('click', nextSlide2);
-
-    //     createDraggableWords2();
-    // dragAndDropPuzzlesData2.forEach((data, index) => {
-    //     createDragAndDropPuzzle2(data, index);
-    // });
 });

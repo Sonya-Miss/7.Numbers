@@ -1,14 +1,15 @@
-// game2_drag_and_drop.js
-
-// --- ДАНІ ДЛЯ ГРИ 2 ---
 const dragAndDropPuzzlesData2 = [
-    { correctWord: "How are you", image: "./Pictures/як твої справи.jpg", draggableWord: "How are you" },
-    { correctWord: "I'm good", image: "./Pictures/добре.jpg", draggableWord: "I'm good" },
-    { correctWord: "I'm happy", image: "./Pictures/щасливий.jpg", draggableWord: "I'm happy" },
-    { correctWord: "I'm great", image: "./Pictures/чудово.jpg", draggableWord: "I'm great" },
-    { correctWord: "I'm sad", image: "./Pictures/сумний.jpg", draggableWord: "I'm sad" },
-    { correctWord: "I'm tired", image: "./Pictures/втомлений.jpg", draggableWord: "I'm tired" },
-    { correctWord: "I'm hungry", image: "./Pictures/голодний.jpg", draggableWord: "I'm hungry" }
+    { correctWord: "zero", image: "./Pictures/0.jpg", draggableWord: "zero" },
+    { correctWord: "two", image: "./Pictures/2.jpg", draggableWord: "two" },
+    { correctWord: "one", image: "./Pictures/1.jpg", draggableWord: "one" },
+    { correctWord: "six", image: "./Pictures/6.jpg", draggableWord: "six" },
+    { correctWord: "seven", image: "./Pictures/7.jpg", draggableWord: "seven" },
+    { correctWord: "five", image: "./Pictures/5.jpg", draggableWord: "five" },
+    { correctWord: "nine", image: "./Pictures/9.jpg", draggableWord: "nine" },
+    { correctWord: "ten", image: "./Pictures/10.jpg", draggableWord: "ten" },
+    { correctWord: "three", image: "./Pictures/3.jpg", draggableWord: "three" },
+    { correctWord: "four", image: "./Pictures/4.jpg", draggableWord: "four" },
+    { correctWord: "eight", image: "./Pictures/8.jpg", draggableWord: "eight" }
 ];
 
 // Глобальна змінна для відстеження перетягуваного елемента для ЦІЄЇ ГРИ
@@ -41,9 +42,9 @@ function createDragAndDropPuzzle2(puzzleData, index) {
 
     const puzzleWrapper = document.createElement('div');
     puzzleWrapper.id = puzzleId;
-    puzzleWrapper.className = "bg-white p-3 rounded-lg shadow-md flex flex-col items-center relative flex-grow-0 flex-shrink-0 w-[calc(33.33%-1.066rem)] min-w-[180px]";
+    puzzleWrapper.className = "bg-white p-3 rounded-lg shadow-md flex flex-col items-center relative flex-grow-0 flex-shrink-0 w-[calc(34%-1.066rem)] min-w-[180px]";
     puzzleWrapper.innerHTML = `
-        <img src="${imagePath}" alt="Зображення для слова ${correctWord}" class="w-28 h-28 object-cover rounded-md shadow-sm mb-3"> 
+        <img src="${imagePath}" alt="Зображення для слова ${correctWord}" class="imagesize w-28 h-28 rounded-md shadow-sm mb-3"> 
         
         <div class="word-drop-zone2 w-full h-16 flex justify-center items-center border-2 border-dashed border-gray-300 rounded-md text-lg font-bold text-gray-500 overflow-hidden">
             <span class="placeholder text-sm">Перетягніть слово сюди</span>
