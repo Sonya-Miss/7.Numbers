@@ -1,37 +1,37 @@
 // --- ДАНІ ДЛЯ ГРИ 4: Імітація діалогу (Склади переклад по слову) ---
 const dialogPuzzlesData5 = [
     {
-        ukrainianPhrase: "Добрий ранок! Приємно познайомитись",
-        correctEnglishPhrase: "Hi! Nice to meet you",
+        ukrainianPhrase: "Привіт! Приємно познайомитись",
+        correctEnglishPhrase: "Hi! nice to meet you",
         draggableEnglishWords: ["Hi!", "nice", "to", "meet", "you"] 
     },
     {
-        ukrainianPhrase: "Добрий ранок, Як тебе звати?",
-        correctEnglishPhrase: "Good afternoon! What is your name?",
+        ukrainianPhrase: "Добрий день, Як тебе звати?",
+        correctEnglishPhrase: "Good afternoon! what is your name?",
         draggableEnglishWords: ["Good", "afternoon!", "what", "is", "your", "name?"]
     },
     {
         ukrainianPhrase: "Мене звати Дмитро, Як тебе звати?",
-        correctEnglishPhrase: "My name is Dmytro, What is your name?",
+        correctEnglishPhrase: "My name is Dmytro, what is your name?",
         draggableEnglishWords: ["My", "name", "is", "Dmytro,", "what", "is", "your", "name?"]
     },
     {
         ukrainianPhrase: "Я є Мілана, Як твої справи?",
-        correctEnglishPhrase: "I am Milana, How are you?",
+        correctEnglishPhrase: "I am Milana, how are you?",
         draggableEnglishWords: ["I", "am", "Milana,", "how", "are", "you?"]
     },
     {
         ukrainianPhrase: "Я чудово, Як твої справи",
-        correctEnglishPhrase: "I'm hungry, How are you?",
+        correctEnglishPhrase: "I'm hungry, how are you?",
         draggableEnglishWords: ["I'm", "hungry,", "how", "are", "you"]
     },
     {
-        ukrainianPhrase: "Я щаслива, До побачення Дмитро",
-        correctEnglishPhrase: "I'm good, Bye Dmytro",
+        ukrainianPhrase: "Я добре, До побачення Дмитро",
+        correctEnglishPhrase: "I'm good, bye Dmytro",
         draggableEnglishWords: ["I'm", "good,", "bye", "Dmytro"] 
     },
      {
-        ukrainianPhrase: "Пока, Мілана",
+        ukrainianPhrase: "До побачення, Мілана",
         correctEnglishPhrase: "Goodbye, Milana",
         draggableEnglishWords: ["Goodbye,", "Milana"]
     }
