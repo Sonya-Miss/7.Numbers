@@ -7,26 +7,26 @@ const dialogPuzzlesData5 = [
     },
     {
         ukrainianPhrase: "Добрий день, Як тебе звати?",
-        correctEnglishPhrase: "Good afternoon! what is your name?",
-        draggableEnglishWords: ["Good", "afternoon!", "what", "is", "your", "name?"]
+        correctEnglishPhrase: "Good afternoon! what is your name",
+        draggableEnglishWords: ["Good", "afternoon!", "what", "is", "your", "name"]
     },
     {
         ukrainianPhrase: "Мене звати Дмитро, Як тебе звати?",
-        correctEnglishPhrase: "My name is Dmytro, what is your name?",
-        draggableEnglishWords: ["My", "name", "is", "Dmytro,", "what", "is", "your", "name?"]
+        correctEnglishPhrase: "My name is Dmytro, what is your name",
+        draggableEnglishWords: ["My", "name", "is", "Dmytro,", "what", "is", "your", "name"]
     },
     {
         ukrainianPhrase: "Я є Мілана, Як твої справи?",
-        correctEnglishPhrase: "I am Milana, how are you?",
-        draggableEnglishWords: ["I", "am", "Milana,", "how", "are", "you?"]
+        correctEnglishPhrase: "I am Milana, how are you",
+        draggableEnglishWords: ["I", "am", "Milana,", "how", "are", "you"]
     },
     {
-        ukrainianPhrase: "Я чудово, Як твої справи",
-        correctEnglishPhrase: "I'm hungry, how are you?",
+        ukrainianPhrase: "Я голодний, Як твої справи",
+        correctEnglishPhrase: "I'm hungry, how are you",
         draggableEnglishWords: ["I'm", "hungry,", "how", "are", "you"]
     },
     {
-        ukrainianPhrase: "Я добре, До побачення Дмитро",
+        ukrainianPhrase: "Я добре, пока Дмитро",
         correctEnglishPhrase: "I'm good, bye Dmytro",
         draggableEnglishWords: ["I'm", "good,", "bye", "Dmytro"] 
     },
