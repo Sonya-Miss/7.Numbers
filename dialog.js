@@ -36,8 +36,9 @@ const dialogPuzzlesData5 = [
         draggableEnglishWords: ["Goodbye,", "Milana"]
     }
 ];
-// game5_dialog_words.js
-// Глобальна змінна для відстеження перетягуваного елемента для ЦІЄЇ ГРИ
+
+
+
 let draggedItem5 = null; 
 
 // --- ДОПОМІЖНІ ФУНКЦІЇ ---
@@ -65,26 +66,29 @@ function createDialogPuzzle5(puzzleData, index) {
         return;
     }
     
-    const puzzleWrapper = document.createElement('div');
-    puzzleWrapper.id = puzzleId;
-    puzzleWrapper.className = "puzzle-wrapper bg-white p-4 rounded-lg shadow-md flex flex-col items-center relative mb-6";
-    puzzleWrapper.innerHTML = `
-        <p class="text-xl md:text-2xl font-bold text-gray-700 mb-4 text-center">${ukrainianPhrase}</p> 
-        
-        <div id="word-drop-zone-group-${index}" class="word-drop-zone-group5 flex flex-wrap justify-center items-center gap-2 mb-4 min-h-[60px] p-2 border-2 border-dashed border-gray-200 rounded-md">
-            </div>
+const puzzleWrapper = document.createElement('div');
+puzzleWrapper.id = puzzleId;
+puzzleWrapper.className = "puzzle-wrapper bg-white p-4 rounded-lg shadow-md flex flex-col items-center relative mb-6";
+puzzleWrapper.innerHTML = `
+    <p class="text-xl md:text-2xl font-bold text-gray-700 mb-4 text-center">${ukrainianPhrase}</p> 
+    
+    <div id="word-drop-zone-group-${index}" class="word-drop-zone-group5 flex flex-wrap justify-center items-center gap-2 mb-4 min-h-[60px] p-2 border-2 border-dashed border-gray-200 rounded-md">
+    </div>
 
-        <div id="draggable-words-for-puzzle-${index}" class="draggable-words-individual-container5 w-full bg-blue-50 bg-opacity-95 backdrop-blur-sm p-4 rounded-md shadow-inner flex flex-wrap justify-center gap-2">
-            </div>
-        
-        <div class="mt-3 w-full">
-            <button id="check-btn-dialog-${index}" class="w-full bg-sky-500 text-white font-bold py-1.5 px-3 rounded-md hover:bg-sky-600 transition-colors duration-300 disabled:bg-slate-300 text-sm">
-                Перевірити
-            </button>
-            <p id="message-dialog-${index}" class="mt-1 h-4 text-center text-xs font-medium"></p>
-        </div>
-    `;
-    dialogPuzzlesContainer.appendChild(puzzleWrapper);
+    <div id="draggable-words-for-puzzle-${index}" class="draggable-words-individual-container5 w-full bg-blue-50 bg-opacity-95 backdrop-blur-sm p-4 rounded-md shadow-inner flex flex-wrap justify-center gap-2">
+    </div>
+    
+    <div class="mt-3 w-full">
+      <div class="mt-3 w-full flex justify-center">
+    <button id="check-btn-dialog-${index}" class="min-w-[180px] py-3 px-6 bg-sky-500 text-white text-base font-bold rounded-lg hover:bg-sky-600 transition-colors duration-300 disabled:bg-slate-300">
+        Перевірити
+    </button>
+   </div>
+
+        <p id="message-dialog-${index}" class="mt-1 h-4 text-center text-xs font-medium"></p>
+    </div>
+`;
+dialogPuzzlesContainer.appendChild(puzzleWrapper);
     
     const wordDropZoneGroup = document.getElementById(`word-drop-zone-group-${index}`);
     const checkBtn = document.getElementById(`check-btn-dialog-${index}`);

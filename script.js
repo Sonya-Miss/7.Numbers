@@ -619,25 +619,24 @@ function createAudioPuzzleBlock(puzzleData, index) {
     
     const dropZoneWrapper = document.createElement("div");
     dropZoneWrapper.id = `audio-puzzle-${index}`;
-    dropZoneWrapper.className = "bg-white p-4 rounded-lg shadow-md flex flex-col items-center relative min-w-[180px]";
+    dropZoneWrapper.className = "bg-white p-6 rounded-lg shadow-md flex flex-col items-center relative min-w-[180px] flex-shrink-0";
     dropZoneWrapper.dataset.correct = puzzleData.word; 
 
     dropZoneWrapper.innerHTML = `
         <audio src="${puzzleData.audio}" id="audio-${index}" class="hidden"></audio>
         <button id="play-btn-audio-${index}" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+            <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
         </button>
-        <div class="audio-drop-zone w-full h-14 flex justify-center items-center border-2 border-dashed border-gray-300 rounded-md text-base font-bold text-gray-500 overflow-hidden">
+        <div class="audio-drop-zone h-14 flex justify-center items-center border-2 border-dashed border-gray-300 rounded-md text-base font-bold text-gray-500 overflow-hidden mb-4 min-w-[200px]">
             <span class="placeholder text-sm font-normal text-gray-400">Перетягніть слово сюди</span>
         </div>
         <div class="mt-2 w-full">
-            <button id="check-btn-audio-${index}" class="w-full bg-sky-500 text-white font-bold py-1.5 px-3 rounded-md hover:bg-sky-600 transition-colors duration-300 disabled:bg-slate-300 text-xs">
+            <button id="check-btn-audio-${index}" class="w-full bg-sky-500 text-white font-bold py-3 px-6 rounded-md hover:bg-sky-600 transition-colors duration-300 disabled:bg-slate-300 text-xs">
                 Перевірити
             </button>
             <p id="message-audio-${index}" class="mt-1 h-4 text-center text-xs font-medium"></p>
         </div>
     `;
-
     audioZonesContainer.appendChild(dropZoneWrapper);
 
     const playBtn = dropZoneWrapper.querySelector(`#play-btn-audio-${index}`);
@@ -662,7 +661,7 @@ function createAudioGameWordBank() {
     shuffleArray([...audioPuzzlesData]).forEach(({ word }) => {
         const wordEl = document.createElement("div");
         wordEl.textContent = word;
-        wordEl.className = "audio-draggable-word bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded-lg cursor-grab active:cursor-grabbing transition-transform duration-100 ease-out";
+        wordEl.className = "audio-draggable-word bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-4 px-6 rounded-lg cursor-grab active:cursor-grabbing transition-transform duration-100 ease-out";
         wordEl.setAttribute("draggable", true);
         wordEl.dataset.word = word; 
         audioWordBank.appendChild(wordEl);
